@@ -1,0 +1,99 @@
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: whitesmoke;
+  min-width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#search {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.date_container {
+  width: 100%;
+  height: 40px;
+  font-size: 1.2rem;
+} 
+
+button {
+  font-size: large;
+}
+
+h2 {
+  text-align: center;
+}
+
+#search_results {
+  display: flex;
+}
+
+.result_division {
+  margin: 0;
+}
+
+.division_title {
+  text-align: center;
+}
+
+#radio_selector > input {
+  height: 20px;
+  width: 20px;
+}
+
+#date_range, #date_select, .date_range {
+  width: 200px;
+  height: auto;
+  margin: 10px 0;
+  font-size: large;
+}
+
+.division_list {
+  margin: 10px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.card {
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background: whitesmoke;
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  border-color: darkslategrey;
+  background: white;
+}
+
+.hide {
+  display: none;
+}
+
+.card_text {
+  display: block;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Filter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Search Events By Dates</h2>
+    <div id="search">
+      <form id="search_form">
+        <div class="date_container" id="radio_selector">
+          Dropdown <input type="radio" data-filtertype="date_select" name="date_filter_type" value="date_select" checked>
+          Range <input type="radio" data-filtertype="date_range" name="date_filter_type" value="date_range">
+        </div>
+        <select id="date_select" class="date_container">
+          <option selected disabled>Choose Date</option>
+          <option>Yesterday</option>
+          <option>Last Week</option>
+          <option>Last Month</option>
+        </select>
+        <div id="date_range" class="date_container hide">
+          <input type="date" id="date_min" class="date_range" />
+          <input type="date" id="date_max" class="date_range" />
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div id="search_results" class="search_results">
+      <section class="result_division">
+        <h3 class="division_title">England And Wales</h3>
+        <ul data-div="england-and-wales" class="division_list">
+          <progress></progress>
+        </ul>
+      </section>
+      <section class="result_division">
+        <h3 class="division_title">Scotland</h3>
+        <ul data-div="scotland" class="division_list">
+          <progress></progress>
+        </ul>
+      </section>
+      <section class="result_division">
+        <h3 class="division_title">Northern Ireland</h3>
+        <ul data-div="northern-ireland" class="division_list">
+          <progress></progress>
+        </ul>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
